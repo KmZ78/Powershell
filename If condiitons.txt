@@ -1,0 +1,20 @@
+<#
+Structure de controle : IF THEN ELSE
+if (condition)
+    {
+        Instructions si condition vraie
+    }
+    else {
+        Instructions si condition fausse
+    }
+    #>
+
+    # Verifier qu'un texte commence par Aa
+    $texte = Read-host "Taper un texte commencant par Aa"
+    $texteMaj = $texte.ToUpper()
+    if ($texteMaj[0] -eq "A") {
+        Whrite-Host "Le texte commence par Aa"
+    }
+    else {
+        Whrite-Host "Le texte DOIT commence par aA"
+    }
